@@ -147,8 +147,6 @@ class Game:
                 sys.exit()
                 
                     
-game=Game()
-Game.play_game()
 
                     
                     
