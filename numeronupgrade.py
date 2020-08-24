@@ -149,18 +149,4 @@ class Game:
     def display_record(self):
         print(self.n.displaynumber())
         
-                    
-
-game=Game()
-game.play_game()
-                
-                
-                
-                
-        
-
-   
-
-
-
 
