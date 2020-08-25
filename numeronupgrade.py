@@ -50,12 +50,6 @@ class Check:
     def check(self):
         print('{}eat{}bite'.format(self.eat,self.bite))
                     
-                
-class Result:
-    def __init__(self,t,n):
-        self.times=t
-        self.name=n
-        
 
 class Question:
     def __init__(self):
@@ -72,7 +66,7 @@ class Question:
             print(a)
         
 
-class No:
+class Result:
     
     def __init__(self):
         self.l = []
@@ -94,7 +88,7 @@ class No:
                   
 class Game:
     def play_game(self):
-        self.n=No()
+        self.r=Result()
         print('ヌメロン ')
         tell=input('ゲームの説明は必要ですか? y/n>>')
         
@@ -137,16 +131,12 @@ class Game:
                     print('正解です．正解するまでの質問回数は{}回でした．'.format(time))
                     rec=input('記録を保存しますか? y/n>>')
                     if rec=='y':
-                        self.n.record(time)
-                        self.n.number()
-                        self.n.displaynumber()
+                        self.r.record(time)
+                        self.r.number()
+                        self.r.displaynumber()
                     
                 question=input('もう一度挑戦しますか? y/n>>')
                 
         else:
                 sys.exit()
-                
-    def display_record(self):
-        print(self.n.displaynumber())
-        
 
